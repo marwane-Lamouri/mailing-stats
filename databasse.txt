@@ -1,0 +1,4 @@
+B6DFTSDi4oXg4DgH
+marwane
+
+mongodb+srv://marwane:B6DFTSDi4oXg4DgH@cluster0.9yndk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
