@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes');
 var videosRouter = require('./routes/videos');
-
+var videoenRouter = require('./routes/videoen');
 var app = express();
 
 var db = require("./database");
@@ -23,7 +23,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/videos', videosRouter);
+app.use('/videos/1', videosRouter);
+app.use('/videos/2', videoenRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
