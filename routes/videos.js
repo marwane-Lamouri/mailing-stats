@@ -5,7 +5,7 @@ var Video = require('../database/schema/video');
 
 const id = 1 ;
 router.get('/', function(req, res, next) {
-  res.render('alexion', { title: 'alexion' });
+  res.render('alexion', { title: 'alexion fr' });
 });
 
 

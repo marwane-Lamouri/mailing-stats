@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var Video = require('../database/schema/video');
-const id = 2 ;
+const id = 3 ;
 
 
 router.get('/', function(req, res, next) {
-  res.render('alexionen', { title: 'alexion en' });
+  res.render('alexionrus', { title: 'alexion rus' });
 });
 
 
