@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get("/createSchema",function(req,res) {
-  const video = new Video();
+  const video = new Video({_id : id});
   Video.findById(id,function(err,inst) {
     console.log(err);
     console.log(inst);
