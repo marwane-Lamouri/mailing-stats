@@ -27,8 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-// fr
-app.use('/videos/1', videosRouter);
+
 
 // en 
 app.use('/getVideo', videoenRouter);
@@ -36,6 +35,10 @@ app.use('/videos/2', videoenRouter);
 
 // rus 
 app.use('/videos/3', VideorusRouter);
+
+// fr
+app.use('/videos', videosRouter);
+app.use('/videos/1', videosRouter);
 
 
 // catch 404 and forward to error handler
